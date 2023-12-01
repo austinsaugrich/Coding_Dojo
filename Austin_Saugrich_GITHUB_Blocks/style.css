@@ -11,33 +11,38 @@ footer{
 
 
 
+
 div img{
     width: 250px;
     height: 250px;
-    padding: 15px 15px;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-around;
 }
-
 
 
 .top{
     color: yellow;
     background-color: yellow;
     align-items: center;
-    margin: 25px;
+    max-width: 80%;
+    margin: 25px auto;
     display: flex;
     justify-content: center;
 }
 .middle{
     color: pink;
     background-color: blueviolet;
-    margin: 25px;
+    max-width: 80%;
+    margin: 25px auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 .bottom{
     color: wheat;
     background-color: blue;
-    margin: 25px;
+    margin: 25px auto;
+    max-width: 80%;
     display: flex;
     justify-content: center;
 }
