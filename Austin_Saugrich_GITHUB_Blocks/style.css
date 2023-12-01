@@ -1,15 +1,43 @@
-.Top{
-    color: blue;
+
+
+h1{
+    text-align: center;
+    color: rebeccapurple;
+    
 }
-.Middle{
+footer{
+    text-align: center;
+}
+
+
+
+div img{
+    width: 250px;
+    height: 250px;
+    padding: 15px 15px;
+}
+
+
+
+.top{
+    color: yellow;
+    background-color: yellow;
+    align-items: center;
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+}
+.middle{
     color: pink;
+    background-color: blueviolet;
+    margin: 25px;
+    display: flex;
+    justify-content: space-around;
 }
 .bottom{
     color: wheat;
-    height: 100px;
-    width: 100px;
-}
-
-.mid{
-    color: blue;
+    background-color: blue;
+    margin: 25px;
+    display: flex;
+    justify-content: center;
 }
