@@ -1,0 +1,35 @@
+h1{
+    
+    text-align: center;
+    background-color: #008A8A;
+    height: 100PX;
+    color: 202124;
+}
+
+
+
+
+div.form{
+    margin-top: 100px;
+    display: block;
+    text-align: center;
+    background-color: #202124;
+    color: #008A8A;
+}
+
+form{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+
+form select{
+    margin-bottom: 10px;
+}
+
+
+form input{
+    margin-bottom: 10px;
+}
