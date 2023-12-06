@@ -1,81 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Profile Page</title>
-</head>
-<body>
-    <div class="top">
-        <div class="top header">
-            <h1>Profile</h1>
-            <h3>Home</h3>
-            <h3>My Profile</h3>
-            <H3>Find Connections</H3>
-            <button type="button">Sign Out</button>
+  </head>
+  <body>
+    <div class="header">
+      <div class="navLink">
+        <h1>Profile</h1>
+        <h2>Home</h2>
+        <h2>My Profile</h2>
+        <h2>Find Connections</h2>
+      </div>
+      <button class="signout">Sign Out</button>
+    </div>
+    <div class="profile">
+      <img class="me" src="images/me.jpg" alt="me" />
+      <h1 class="name">Austin Saugrich</h1>
+      <div class="row location">
+        <img class="icon" src="images/map-marker.png" alt="location" />
+        <h3>Tennessee</h3>
+      </div>
+      <div class="row">
+        <p>Developer | Engineer | Problem Solver | Master of Google</p>
+        <p>I have no idea what im doing.</p>
+      </div>
+      <div class="row settings">
+        <img class="icon" src="images/gear.png" alt="gear" />
+        <a href="">Edit Profile</a>
+      </div>
+    </div>
+      <div class="education">
+        <div class="headbot">
+          <h2>Education</h2>
         </div>
-    </div>
-    <div class="middle">
-        <div class="profile">
-            <img src="images/me.jpg" alt="Me!">
-            <img src="images/map-marker.png" alt="Location">
-            <p>Seattle</p>
-            <p>Developer | Enginner | Problem Solver | Master of google searches</p>
-            <img src="images/gear.png" alt="Settings"> <a href="">edit profile</a>          
+        <div class="contents">
+          <h2>Coding Dojo - Online Part-Time Accelerated</h2>
+          <p>November 2023 - July 2024</p>
+          <h4>Black belt in python and Javascript</h4>
         </div>
-    </div>
-    <div class="foot">
-        <div class="education">
-            <h3>Education</h3>
-            <H2>Coding Dojo - Accelecrated Part time 2 stack's </H2>
-            <p>November 2023 - June 2024</p>
-            <p>Blackbelt in Python and Javascript</p>
-        </div>
-    </div>
-    </div>
-    <div class="containerReq">
-        <div class="Connection">
-            <h3>Connection Requests</h3>
+      </div>
+    <div class="sidebar">
+      <div class="requests">
+        <div class="headbot">
+          <div class="count">
             <p>2</p>
+          </div>
+          <h2>Connection Requests</h2>
         </div>
-        <div class="todd">
-            <img src="images/todd-s.jpg" alt="todd">
-            <p>Todd E</p>
-            <img src="images/accept-circle.png" alt="yes">
-            <img src="images/close-circle.png" alt="no">
+        <div class="friend">
+          <div class="friendinfo">
+            <img class="profilepic" src="images/todd-s.jpg" alt="todd" />
+            <h3>Todd E</h3>
+          </div>
+          <div class="friendactions">
+            <img src="images/accept-circle.png" alt="yes" />
+            <img src="images/close-circle.png" alt="no" />
+          </div>
         </div>
-        <div class="phil">
-            <img src="images/phil-s.jpg" alt="phil">
-            <p>Phil K</p>
-            <img src="images/accept-circle.png" alt="yes">
-            <img src="images/close-circle.png" alt="no">
+        <div class="friend">
+          <div class="friendinfo">
+            <img class="profilepic" src="images/phil-s.jpg" alt="todd" />
+            <h3>Phil K</h3>
+          </div>
+          <div class="friendactions">
+            <img src="images/accept-circle.png" alt="yes" />
+            <img src="images/close-circle.png" alt="no" />
+          </div>
         </div>
-    </div>
-    <div class="containerYour">
-        <div class="yourConnections">
-            <h3>Your Connections</h3>
+      </div>
+      <div class="requests">
+        <div class="headbot">
+          <div class="count2">
             <p>500+</p>
+          </div>
+          <h2>Your Connections</h2>
         </div>
-        <div class="adrien">
-            <img src="images/adrien-s.jpg" alt="adrien">
-            <p>Adrien</p>
+        <div class="friend">
+          <div class="friendinfo">
+            <img class="profilepic" src="images/adrien-s.jpg" alt="todd" />
+            <h3>Adrien D</h3>
+          </div>
         </div>
-        <div class="Anne J">
-            <img src="images/anne-s.jpg" alt="anne">
-            <p>Anne J</p>
+        <div class="friend">
+          <div class="friendinfo">
+            <img class="profilepic" src="images/anne-s.jpg" alt="todd" />
+            <h3>Anne J</h3>
+          </div>
         </div>
-        <div class="alayne T">
-            <img src="images/alayne-s.jpg" alt="alayne">
-            <p>Alayne T</p>
+        <div class="friend">
+          <div class="friendinfo">
+            <img class="profilepic" src="images/alayne-s.jpg" alt="todd" />
+            <h3>Alayne T</h3>
+          </div>
         </div>
-        <div class="arry Y">
-            <img src="images/arry-s.jpg" alt="arry">
-            <p>Arry Y</p>
+        <div class="friend">
+          <div class="friendinfo">
+            <img class="profilepic" src="images/arry-s.jpg" alt="todd" />
+            <h3>Arry Y</h3>
+          </div>
         </div>
         <div class="footer">
-            <a href="">View More</a>
+          <a href="">View More</a>
         </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>

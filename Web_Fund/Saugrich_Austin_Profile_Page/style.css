@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+}
+
+.header {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-left: 200px;
+  color: white;
+}
+
+.signout {
+  padding: 0.5em;
+  background-color: #17a2b9;
+  margin-right: 200px;
+  color: white;
+}
+
+.me {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  border: 4px solid white;
+  margin-top: 16px;
+  margin-left: 16px;
+}
+.profile {
+  background: linear-gradient(
+    to top,
+    white 0%,
+    white 75%,
+    paleturquoise 75%,
+    paleturquoise 100%
+  );
+  width: 30em;
+  display: inline-block;
+  border: 4px solid grey;
+  margin: 75px 50px 50px 300px;
+}
+
+.icon {
+  height: 25px;
+}
+
+.location {
+  display: flex;
+  gap: 1em;
+  margin-left: 16px;
+}
+
+.name{
+    margin-left: 16px;
+}
+
+.settings {
+  display: flex;
+  gap: 1em;
+  margin-left: 16px;
+}
+.settings > a {
+  color: blue;
+}
+.row {
+  padding: 0.5em;
+  margin-left: 16px;
+}
+
+.headbot {
+  background-color: #333333;
+  color: white;
+  display: flex;
+  padding: 1em;
+  gap: 1em;
+  
+ 
+}
+
+.education {
+  background-color: white;
+  width: 30em;
+  margin: 15px 50px 50px 300px;
+  
+}
+.contents {
+  padding: 2em;
+  border: 4px solid grey;
+  
+}
+
+.contents > * {
+  margin-bottom: 0.5em;
+}
+
+.contents > p {
+  color: grey;
+}
+
+.count{
+    background-color: lightgrey;
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.requests{
+    background-color: white;
+    width: 18em;
+    display: flexbox;
+    border: 4px solid gray;
+    margin-bottom: 50px;
+    margin-left: 950px;
+    
+}
+.friend{
+    display: flex;
+    align-items: center;
+    margin: 16px;
+}
+.profilepic{
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    border: 4px solid white;
+}
+.friendactions>img{
+    width: 50px;
+    height: 50px;
+}
+
+.friendinfo{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.friendactions{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-left: 16px
+}
+
+.count2{
+    background-color: lightgrey;
+    border-radius: 45%;
+    width: 3em;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.footer{
+    display: flex;
+    margin-left: 16px;
+    border: 4px solid grey;
+    justify-content: flex-start;
+    margin-left: 0px;
+    padding: .5em;
+}
+
+.footer>a{
+    color: blue;
+}
+
