@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">k
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Button Clicker</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Dojoanry</h1>
+      <input class="search" type="text" placeholder="Search" />
+      <button onclick="logout(this)" class="loginbtn">Login</button>
+    </header>
+    <div class="content container">
+      <div class="block1">
+        <div class="ninja1">
+          <div class="ninjac">
+            <h1>ninja</h1>
+            <h3>noun</h3>
+            <h3>Plural: ninjas</h3>
+            <button onclick="alert('Ninja was liked')" class="likebtn">
+              13 likes
+            </button>
+          </div>
+          <div class="sidebar1">
+            <p>
+              A practitoner skilled in the <a href="">Japanese</a> art of
+              <a href="">ninjutsu</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="block1">
+        <div class="ninja1">
+          <div class="ninjac">
+            <h1>ninja</h1>
+            <h3>noun</h3>
+            <h3>Plural: ninjas</h3>
+            <button onclick="alert('Ninja was liked')" class="likebtn">
+              37 likes
+            </button>
+          </div>
+          <div class="sidebar1">
+            <p>
+              <a href="">programmer</a> who breaks down problems with
+              <a href="">zen</a>-like focus
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar2">
+        <h2>Dojoanry is defined by YOU</h2>
+        <div class="butbox">
+          <button onclick="hide(this)" class="defbtn">Add Definition</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
