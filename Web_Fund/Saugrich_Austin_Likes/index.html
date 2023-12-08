@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Likes</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/94f0eeecce.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Network</h1>
+      </div>
+    </header>
+    <nav>
+      <div class="container">
+        <h1>Your Feed</h1>
+      </div>
+    </nav>
+    <div class="container d-flex">
+      <main class="content">
+        <div class="logo">
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <p><a href="#">Add an avatar</a></p>
+        <h2>James Doe</h2>
+      </main>
+      <aside>
+        <div class="box">
+          <div class="row">
+            <div class="name">
+              <h1>Neil M</h1>
+            </div>
+            <div class="likes">
+              <h3><span id="neil">9</span> Like(s)</h3>
+              <button class="likebtn" onclick="nlikes()">Like</button>
+            </div>
+          </div>
+          <div class="text">
+            <p>
+              I just set up this discord bot, let me know what you all think.
+              <a href="#">link</a>
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="row">
+            <div class="name">
+              <h1>Nichole K</h1>
+            </div>
+            <div class="likes">
+              <h3><span id="nic">12</span> Like(s)</h3>
+              <button class="likebtn" onclick="nilikes()">Like</button>
+            </div>
+          </div>
+          <div class="text">
+            <p>Just finished my <a href="#">next comic,</a> check it out.</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="row">
+            <div class="name">
+              <h1>Jim R</h1>
+            </div>
+            <div class="likes">
+              <h3><span id="jim">9</span> Like(s)</h3>
+              <button class="likebtn" onclick="jlikes()">Like</button>
+            </div>
+          </div>
+          <div class="text d-flex">
+            <p>
+              I cant stop listening to the <a href="#">new album</a>. Who else
+              is liking it?
+            </p>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
