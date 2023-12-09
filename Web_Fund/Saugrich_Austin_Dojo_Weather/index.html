@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/94f0eeecce.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- header start -->
+    <header class="header">
+      <div class="title">
+        <h1>DojoWeather</h1>
+      </div>
+      <div>
+        <ul class="cities">
+          <li>Burbank</li>
+          <li>Chicago</li>
+          <li>Dallas</li>
+        </ul>
+      </div>
+    </header>
+    <!-- header end -->
+    <main>
+      <!-- city temps -->
+      <div class="citydisplay">
+        <h2>San Jose</h2>
+        <div class="temperature">
+          <label for="temp">show temperature in</label>
+          <select name="temp" id="temp">
+            <option value="cel">&#8451;</option>
+            <option value="far">&#8457;</option>
+          </select>
+        </div>
+      </div>
+      <!-- city temps end -->
+      <!-- forecast -->
+      <div class="forecast">
+        <div class="days">
+          <h1>Today</h1>
+          <img
+            src="assets/2995003_cloud_rain_weather_day_water_icon.png"
+            alt="rain"
+          />
+          <p>some rain</p>
+          <div class="degrees">
+            <p class="high">24&#176;</p>
+            <p class="low">18&#176;</p>
+          </div>
+        </div>
+        <div class="days">
+          <h1>Tomorrow</h1>
+          <img
+            src="assets/2995005_sun_sunny_yellow_weather_beach_icon.png"
+            alt="rain"
+          />
+          <p>some sun</p>
+          <div class="degrees">
+            <p class="high">27&#176;</p>
+            <p class="low">19&#176;</p>
+          </div>
+        </div>
+        <div class="days">
+          <h1>Friday</h1>
+          <img
+            src="assets/2995000_cloud_weather_cloudy_rain_sun_icon.png"
+            alt="rain"
+          />
+          <p>some clouds</p>
+          <div class="degrees">
+            <p class="high">21&#176;</p>
+            <p class="low">16&#176;</p>
+          </div>
+        </div>
+        <div class="days">
+          <h1>Saturday</h1>
+          <img
+            src="assets/2995005_sun_sunny_yellow_weather_beach_icon.png"
+            alt="rain"
+          />
+          <p>some sun</p>
+          <div class="degrees">
+            <p class="high">26&#176;</p>
+            <p class="low">21&#176;</p>
+          </div>
+        </div>
+      </div>
+      <!-- forecast end -->
+      <!-- cookie tab -->
+      <div class="cookie">
+        <i class="fa-solid fa-cookie-bite imgcookie"></i>
+        <div class="cookiecontent">
+          <h2>Stop! Cookie time</h2>
+          <p>
+            We use cookies (sadly not the edible ones) to personzlize content
+            and do ads, to provide social media featues and to asalyse our
+            traffic.
+            <a href="#">Read more,,,</a>
+          </p>
+        </div>
+        <div class="acceptbtn">
+          <button>I accept</button>
+        </div>
+      </div>
+      <!-- cookie tab end -->
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
