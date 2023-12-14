@@ -18,9 +18,9 @@
       </div>
       <div>
         <ul class="cities">
-          <li>Burbank</li>
-          <li>Chicago</li>
-          <li>Dallas</li>
+          <li onclick="alert('Loading weather report...')">Burbank</li>
+          <li onclick="alert('Loading weather report...')">Chicago</li>
+          <li onclick="alert('Loading weather report...')">Dallas</li>
         </ul>
       </div>
     </header>
@@ -31,7 +31,7 @@
         <h2>San Jose</h2>
         <div class="temperature">
           <label for="temp">show temperature in</label>
-          <select name="temp" id="temp">
+          <select onchange="toCel2()" name="temp" id="temp">
             <option value="cel">&#8451;</option>
             <option value="far">&#8457;</option>
           </select>
@@ -48,8 +48,8 @@
           />
           <p>some rain</p>
           <div class="degrees">
-            <p class="high">24&#176;</p>
-            <p class="low">18&#176;</p>
+            <p class="high"><span class="num">24</span>&#176;</p>
+            <p class="low"><span class="num">18</span>&#176;</p>
           </div>
         </div>
         <div class="days">
@@ -60,8 +60,8 @@
           />
           <p>some sun</p>
           <div class="degrees">
-            <p class="high">27&#176;</p>
-            <p class="low">19&#176;</p>
+            <p class="high"><span class="num">27</span>&#176;</p>
+            <p class="low"><span class="num">19</span>&#176;</p>
           </div>
         </div>
         <div class="days">
@@ -72,8 +72,8 @@
           />
           <p>some clouds</p>
           <div class="degrees">
-            <p class="high">21&#176;</p>
-            <p class="low">16&#176;</p>
+            <p class="high"><span class="num">21</span>&#176;</p>
+            <p class="low"><span class="num">16</span>&#176;</p>
           </div>
         </div>
         <div class="days">
@@ -84,8 +84,8 @@
           />
           <p>some sun</p>
           <div class="degrees">
-            <p class="high">26&#176;</p>
-            <p class="low">21&#176;</p>
+            <p class="high"><span class="num">26</span>&#176;</p>
+            <p class="low"><span class="num">21</span>&#176;</p>
           </div>
         </div>
       </div>
@@ -103,7 +103,7 @@
           </p>
         </div>
         <div class="acceptbtn">
-          <button>I accept</button>
+          <button onclick="cookieBye()">I accept</button>
         </div>
       </div>
       <!-- cookie tab end -->
