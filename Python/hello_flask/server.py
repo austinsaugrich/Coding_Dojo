@@ -8,6 +8,15 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello World!'  # Return the string 'Hello World!' as a response
 
+# import statements, maybe some other routes
+
+
+@app.route('/success')
+def success():
+    return "success"
+
+    # app.run(debug=True) should be the very last statement!
+
 
 if __name__ == "__main__":   # Ensure this file is being run directly and not from a different module
     app.run(debug=True)    # Run the app in debug mode.
