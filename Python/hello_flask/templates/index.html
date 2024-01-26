@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1 class="heading">Welcome!</h1>
+    </div>
+    <div class="body">
+      {% if num == null %}
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+      {% else %}
+      {% for x in range(0,num): %}
+      {% if color == null %}
+      <div class="block"></div>
+      {% else %}
+      <div class="block" style="background-color: {{color}}"></div>
+      {% endif %}
+    {% endfor %}
+    {% endif %}
+    
+    </div>
+
+    <style>
+      .heading {
+        display: flex;
+        justify-content: center;
+      }
+
+      .block {
+        height: 150px;
+        width: 150px;
+        border: solid;
+        background-color: blue;
+        display: flex;
+        justify-content: center;
+      }
+      .body {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-content: center;
+        gap: 2em;
+      }
+    </style>
+    
+</html>
