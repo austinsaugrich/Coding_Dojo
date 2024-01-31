@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Counter</h1>
+    <p>{{count}}</p>
+    <div class="butt">
+      <form action="/add2">
+        <input
+          class="click"
+          type="submit"
+          name=""
+          value="Click"
+        />
+      </form>
+      <form action="/destroy_session">
+        <input
+          class="reset"
+          type="submit"
+          name=""
+          value="Reset"
+        />
+      </form>
+    </div>
+  </body>
+</html>
