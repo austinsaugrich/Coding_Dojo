@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: Cambria, Cochin, Georgia, Times,
+    "Times New Roman", serif;
+}
+
+.guessbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: grey;
+  width: 350px;
+  height: 200px;
+  padding-top: 3em;
+  margin-top: 2em;
+  border: solid black;
+  border-radius: 25px;
+}
+.guessbutt {
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;
+}
+
+.guess {
+  padding: 0.3em;
+  background-color: darkgoldenrod;
+}
+.type {
+  margin-top: 1em;
+}
+
+.wrong {
+  background-color: darkred;
+  width: 300px;
+  height: 100px;
+  text-align: center;
+  padding-top: 1em;
+  margin-top: 1em;
+  border-radius: 25px;
+  border: solid black;
+}
+
+.correct {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 300px;
+  height: 100px;
+  background-color: chartreuse;
+  border: solid black;
+  border-radius: 25px;
+  padding-top: 0.5em;
+  margin-top: 1em;
+}
+
+.correctbox {
+  display: flex;
+  flex-direction: column;
+  background-color: grey;
+  align-items: center;
+  margin-top: 1em;
+  width: 300px;
+  height: 100px;
+  padding-top: 1em;
+  border: solid black;
+  border-radius: 25px;
+}
+
+.reset {
+  padding: 0.3em;
+  background-color: darkgoldenrod;
+  margin-top: 0.2em;
+}
+
+.lose {
+  background-color: darkred;
+  width: 300px;
+  height: 100px;
+  text-align: center;
+  padding-top: 0.5em;
+  margin-top: 1em;
+  border-radius: 25px;
+  border: solid black;
+}
