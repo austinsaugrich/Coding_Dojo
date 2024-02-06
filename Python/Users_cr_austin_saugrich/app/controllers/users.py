@@ -2,15 +2,6 @@ from app import app
 from flask import Flask, session, render_template, request, redirect
 from app.models.user import User
 
-Users = [
-    {
-        'id': 2312,
-        'first_name': 'first',
-        'last_name': 'last',
-        'email': 'email'
-    }
-]
-
 
 @app.route('/')
 def hello_world():
