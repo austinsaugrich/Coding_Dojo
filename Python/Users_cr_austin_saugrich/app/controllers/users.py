@@ -16,5 +16,27 @@ def add_user_form():
 
 @app.route('/users/new', methods=['POST'])
 def add_user():
-    User.add(request.form)
+    newuser = User.add(request.form)
+    return redirect(f'/user/{newuser}')
+
+
+@app.route('/edit/user/<int:id>')
+def edit_user_form(id):
+    return render_template('edit.html', user=User.get_by_id(id))
+
+
+@app.route('/edit/user', methods=['POST'])
+def edit_user():
+    User.edit(request.form)
+    return redirect(f'/user/{request.form["id"]}')
+
+
+@app.route('/user/<int:id>')
+def view_user(id):
+    return render_template('view.html', user=User.get_by_id(id))
+
+
+@app.route('/user/delete/<int:id>')
+def delete_user(id):
+    User.delete(id)
     return redirect('/')
