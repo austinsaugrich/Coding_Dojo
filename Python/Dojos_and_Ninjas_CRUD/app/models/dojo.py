@@ -19,21 +19,21 @@ class Dojo:
 
     @classmethod
     def get_dojo_with_ninjas(cls, data):
-        query = 'SELECT * FROM dojos LEFT JOIN ninjas ON ninjas.dojo_id = dojos.id WHERE dojos.id = %(id)s'
+        query = 'SELECT * FROM dojos LEFT JOIN ninjas ON ninjas.dojos_id = dojos.id WHERE dojos.id = %(id)s'
         results = MySQLConnection(
-            'dojos_and_ninjas_schema').query_db(query, data)
+            'dojos_and_ninjas_schema').query_db(query, {'id': data})
         dojo = cls(results[0])
         for row_from_db in results:
             ninja_data = {
                 'id': row_from_db["ninjas.id"],
-                'first_name': row_from_db["ninjas.first_name"],
-                'last_name': row_from_db["ninjas.last_name"],
-                'age': row_from_db["ninjas.age"],
+                'first_name': row_from_db["first_name"],
+                'last_name': row_from_db["last_name"],
+                'age': row_from_db["age"],
                 'created_at': row_from_db["ninjas.created_at"],
                 'updated_at': row_from_db["ninjas.updated_at"]
             }
             dojo.ninjas.append(ninja.Ninja(ninja_data))
-            return dojo
+        return dojo
 
     @classmethod
     def add_dojo(cls, data):
