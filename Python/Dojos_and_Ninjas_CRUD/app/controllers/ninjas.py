@@ -1,6 +1,7 @@
 from app import app
 from flask import Flask, session, render_template, request, redirect
 from app.models.ninja import Ninja
+# Should I import this model here for line 10, or repeat myself and make a new function ?
 from app.models.dojo import Dojo
 
 
