@@ -3,6 +3,7 @@ from flask import flash
 import re
 
 EMAIL_REGEX = re.compile(r'^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]+$')
+PASSWORD_REGEX = re.compile(r'^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$')
 
 
 class User:
@@ -76,8 +77,9 @@ WHERE users.id = %(id)s
         if not EMAIL_REGEX.match(user['email']):
             flash('Invalid email address!', 'register')
             is_valid = False
-        if len(user["password"]) < 8:
-            flash('Password must be at least 8 characters!', 'register')
+        if not PASSWORD_REGEX.match(user['password']):
+            flash(
+                'Password must be at least 8 characters, including one uppercase and a number!', 'register')
             is_valid = False
         if not user['password'] == user['confirm_password']:
             flash('Passwords dont match', 'register')

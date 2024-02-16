@@ -25,7 +25,7 @@ def add_new_user():
 
     user_id = User.add(data)
     session['user_id'] = user_id
-    return redirect('/')
+    return redirect('/dashboard')
 
 
 @app.route('/login', methods=['POST'])
@@ -50,7 +50,8 @@ def login():
 
 @app.route('/dashboard')
 def show_dashboard():
-    return render_template('dashboard.html')
+    id = session['user_id']
+    return render_template('dashboard.html', user=User.get_by_id(id))
 
 
 @app.route('/logout')
