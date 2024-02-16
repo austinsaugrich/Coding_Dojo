@@ -68,19 +68,19 @@ WHERE users.id = %(id)s
     def validate_user_info(user):
         is_valid = True
         if len(user["first_name"]) < 2:
-            flash('First name must be at least 2 characters!')
+            flash('First name must be at least 2 characters!', 'register')
             is_valid = False
         if len(user["last_name"]) < 2:
-            flash('Last name must be at least 2 characters!')
+            flash('Last name must be at least 2 characters!', 'register')
             is_valid = False
         if not EMAIL_REGEX.match(user['email']):
-            flash('Invalid email address!')
+            flash('Invalid email address!', 'register')
             is_valid = False
         if len(user["password"]) < 8:
-            flash('Password must be at least 8 characters!')
+            flash('Password must be at least 8 characters!', 'register')
             is_valid = False
         if not user['password'] == user['confirm_password']:
-            flash('Passwords dont match')
+            flash('Passwords dont match', 'register')
             is_valid = False
         return is_valid
 
@@ -88,6 +88,6 @@ WHERE users.id = %(id)s
     def validate_user_login(user):
         is_valid = True
         if not EMAIL_REGEX.match(user['email']):
-            flash('Invalid email address!')
+            flash('Invalid email address!', 'login')
             is_valid = False
         return is_valid
