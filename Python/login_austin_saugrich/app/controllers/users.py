@@ -24,6 +24,7 @@ def add_new_user():
     }
 
     user_id = User.add(data)
+    print(user_id)
     session['user_id'] = user_id
     return redirect('/dashboard')
 
@@ -46,12 +47,6 @@ def login():
     session['user_id'] = user_in_db.id
 
     return redirect('/dashboard')
-
-
-@app.route('/dashboard')
-def show_dashboard():
-    id = session['user_id']
-    return render_template('dashboard.html', user=User.get_by_id(id))
 
 
 @app.route('/logout')

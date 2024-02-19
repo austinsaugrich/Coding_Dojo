@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div>Welcome {{users.first_name}}</div>
+    <div>Posted by: {{ recipe.author }}</div>
+    <div>
+      <h1>{{recipe.name}}</h1>
+      <div class="view">
+        <div>Description: {{recipe.description}}</div>
+        <div>
+          <div class="col">Under 30 minutes?: {{recipe.under}}</div>
+          <div class="col">Instructions: {{recipe.instructions}}</div>
+          <div class="col">Date Made: {{recipe.date}}</div>
+        </div>
+      </div>
+    </div>
+    <div class="dashboard">
+      <a href="/dashboard"> Back to recipes</a>
+      <a href="/logout">Logout</a>
+    </div>
+  </body>
+</html>
