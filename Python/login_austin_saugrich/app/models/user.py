@@ -28,21 +28,6 @@ VALUES(%(first_name)s, %(last_name)s, %(email)s, %(password)s);
         return MySQLConnection('login_form').query_db(query, data)
 
     @classmethod
-    def edit(cls, data):
-        query = """
-        UPDATE users SET first_name = %(first_name)s, last_name = %(last_name)s, email = %(email)s, password = %(password)s
-WHERE users.id = %(id)s
-        """
-        return MySQLConnection('login_form').query_db(query, data)
-
-    @classmethod
-    def delete(cls, id):
-        query = """
-        DELETE FROM users WHERE users.id = %(id)s
-        """
-        return MySQLConnection('login_form').query_db(query, {'id': id})
-
-    @classmethod
     def get_all(cls):
         query = 'SELECT * FROM users;'
 
@@ -83,7 +68,6 @@ WHERE users.id = %(id)s
     def get_by_email(cls, data):
         query = "SELECT * FROM users WHERE email = %(email)s;"
         result = MySQLConnection("login_form").query_db(query, data)
-        # Didn't find a matching user
         if len(result) < 1:
             return False
         return cls(result[0])
