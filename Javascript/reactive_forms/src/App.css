@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.appcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rows {
+  display: flex;
+  background-color: grey;
+  justify-content: space-between;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 325px;
+  align-items: center;
+  padding: 1em;
+  flex-direction: column;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.error {
+  display: flex;
+}
